@@ -1,0 +1,46 @@
+  <div class="profile-wrapper" id="cover-photo">
+  <div id="home-link" [routerLink]="'/home'">Go back home</div>
+
+  <label id="profile-container" for="image-input">
+    <img  id="profile-pic">
+    <div id="upload-text">
+      <div class="text">Change photo</div>
+    </div>
+  </label>
+  <input type="file" (change)="onFileSelected($event)" id="image-input">
+
+</div>
+
+<form>
+  <div class="profile-wrapper" id="first-wrapper">
+    <label for="user">Name</label>
+    <input *ngIf="profile" id="name" type="text" [(ngModel)]="profile.name" [value]="profile.name"
+       name="user">
+
+    <label for="pass">Password</label>
+    <input id="password" type="password" placeholder="Change password" [(ngModel)]="currentPassword" name="pass">
+  </div>
+
+  <div class="profile-wrapper" id="last-wrapper">
+    <label for="user">Occupation</label>
+    <input *ngIf="profile" id="occupation" [(ngModel)]="profile.occupation" type="text"
+ 
+    [value]="profile.occupation" name="ocupation">
+    <label for="user">Location</label>
+    <input *ngIf="profile" id="location" [(ngModel)]="profile.location" type="text" 
+      name="location" [value]="profile.location">
+    <label for="user">Birthdate</label>
+    <input *ngIf="profile" type="date" id="birthdate" [ngModel]="profile.birthdate | date:'yyyy-MM-dd'"
+      (ngModelChange)="profile.birthdate = $event" [ngModelOptions]="{standalone: true}" [value]="profile.birthdate">
+
+    <!-- <div class="button unselectable" (click)="testIt()">
+      TEST
+    </div> -->
+
+
+
+    <div class="button unselectable" (click)="updateProfile(true)">
+      UPDATE
+    </div>
+  </div>
+</form>

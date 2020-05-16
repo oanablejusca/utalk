@@ -1,0 +1,16 @@
+<div class="wrapper">
+    <div id="search-button" class="button unselectable unclickable" (click)="search()">
+        SEARCH
+    </div>
+    <div class="content" id="first-content">
+        <input id="text-input" type="text" [(ngModel)]="friendSearched" [ngClass]="{'shaking':searchFailed(), 'not-shaking':!searchFailed()}" (keypress)="onEnter($event)">
+        <a class="addFriend-link" (click)="addFriend()">Add friend</a>
+    </div>
+    <div class="friend-content" *ngFor="let friend of currentFriends">
+        <div class="friend-wrapper"> <img class="friend-photo" src="../../../assets/{{friend.photo}}">
+            <div class="friend-info">{{friend.name}}
+                <div class="friend-occupation">{{friend.occupation}}</div>
+            </div>
+        </div>
+    </div>
+</div>

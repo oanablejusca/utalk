@@ -1,0 +1,28 @@
+<div id="navbar">
+  <app-home></app-home>
+</div>
+<div id="content">
+
+  <div id="friends">
+    <div class="friend-main-wrapper">
+      <div class="friend-content" *ngFor="let friend of currentFriends">
+        <div class="friend-wrapper"> <img class="friend-photo" src="../../../assets/{{friend.photo}}">
+          <div class="friend-info">{{friend.name}}
+            <div class="friend-occupation">{{friend.occupation}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="posts">
+    <div class="post-main-wrapper">
+      <div class="post-main-content" *ngFor="let post of currentPosts">
+        <div class="post-wrapper">
+          <div class="post-content">{{post.content}}
+          </div>
+          <div class="post-date">Posted on: {{post.posted_on}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

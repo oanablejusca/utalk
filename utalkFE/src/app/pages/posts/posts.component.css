@@ -1,0 +1,130 @@
+app-home{
+    display:block;
+}
+
+
+.wrapper {
+    border-radius: 5px;
+    margin: 20px 5% 15px 25%;
+    height: auto;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    overflow:visible;   
+
+    background-image: url("../../../assets/graybg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.post-wrapper{
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+    margin-bottom: 4rem;
+}
+
+.post-content{
+    margin-top: 1rem;
+    margin-bottom: -2.5rem;
+    color: #333;
+    font-family: 'Roboto';
+    font-size: 1.2rem;
+    font-weight: 200;
+    display:block;
+}
+
+.content{
+    width:90%;
+    margin-left:3.5%;
+    margin-right:3.5%;
+    margin-top:1.5rem;
+    margin-bottom: 1.5rem;
+    display:block;
+    background-image: linear-gradient(to right, #dfdfdf, rgba(240,240,240, 0.2));
+    overflow:visible;  
+    padding: 1rem; 
+}
+
+.post-date{
+    float:right;
+    color:#555;
+    font-size: 0.8rem;
+    text-align:right;
+    font-family: 'Roboto';
+    margin-top:2.5rem;
+}
+
+.delete-post{
+    float:right;
+    color:#555;
+    font-size: 0.8rem;
+    text-align:right;
+    font-family: 'Roboto';
+    margin-top:2.5rem;
+    float:left;
+    cursor: pointer;
+}
+
+.delete-post:hover{
+    color: rgb(74, 138, 223);
+}
+
+
+.button {
+    background-color: #999;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    width: 5rem;
+    margin-left: calc(50% - 2.5rem - 10px);
+    margin-right: calc(50% - 2.5rem - 10px);
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+    cursor:pointer;
+    font-family:'Roboto';
+}
+
+.button:hover{
+    background-color: rgba(180,180,180, 0.7);
+}
+
+#first-content{
+    display:none;
+}
+
+#text-input {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    display:block;
+  }
+
+
+.menu-link {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Roboto';
+    color: #444;
+    padding-top: 10px;
+    display: block;
+    font-weight: 200;
+    font-size: 0.8rem;
+    cursor:pointer;
+    margin-left:45%;
+}
+
+.menu-link:hover {
+    color: rgb(74, 138, 223);
+}

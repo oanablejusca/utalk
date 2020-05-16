@@ -1,0 +1,21 @@
+app-home{
+    display:block;
+}
+#aboutus-content{
+    width:100%;
+    border:none;
+    height:100%;
+}
+
+.aux-wrapper {
+    border-radius: 5px;
+    background-color: #ddd;
+    width: 70%;
+    margin: 20px 5% 15px 25%;
+    height: 25rem;
+    position: absolute;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    overflow:visible;   
+}

@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <div id="newpost-button" class="button unselectable unclickable" (click)="newPost()">
+    NEW POST
+  </div>
+  <div class="content" id="first-content">
+    <textarea id="text-input" [(ngModel)]="currentInputText">
+        </textarea> 
+        <a class="menu-link" (click)="addPost()">Add post</a>
+      </div>
+  <div class="content" *ngFor="let post of currentPosts">
+    <div class="post-wrapper">
+      <div class="post-content">{{post.content}}
+      </div>
+      <div class="post-date">Posted on: {{post.posted_on}}</div>
+      <div class="delete-post" (click)="deletePost(post.id)">Delete</div>
+    </div>
+  </div>
+</div>

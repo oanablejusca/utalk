@@ -1,0 +1,45 @@
+app-home{
+    display:block;
+}
+#site-map-content{
+    width:100%;
+    border:none;
+    height:100%;
+}
+
+.aux-wrapper {
+    border-radius: 5px;
+    background-color: #ddd;
+    width: 70%;
+    margin: 20px 5% 15px 25%;
+    position: absolute;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#my-info{
+    width:100%;
+    border:none;
+    height:100%;
+    display:none;
+}
+
+
+#more-info {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Roboto';
+    color: #aaa;
+    padding-top: 10px;
+    display: block;
+    font-weight: 200;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+#more-info:hover {
+    color: rgb(74, 138, 223);
+}
