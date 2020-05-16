@@ -1,0 +1,24 @@
+
+
+body p{
+	font-family:"Roboto";
+	font-size:0.8rem;
+	font-weight: 200;
+}
+
+#sitemap-title{
+	font-weight:400;
+	font-size:1.1rem;
+}
+
+#page-name{
+	display:inline;
+	margin-right:2rem;
+	font-weight: 400;
+	margin-top:2rem;
+}
+
+#page-desc{
+	display:inline;
+	color: #333;
+}
